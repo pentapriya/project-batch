@@ -1,3 +1,5 @@
+//modified code for addtion of two nos
+
 #include<iostream>
 using namespace std;
 class cal{
@@ -9,7 +11,7 @@ class cal{
         int add(int,int);
         int sub(int,int);
         int mul(int,int);
-        int div(int,int);
+        //int div(int,int);
 };
 int cal::add(int x,int y){
         return x+y;
@@ -20,9 +22,9 @@ int cal::sub(int x,int y){
 int cal::mul(int x,int y){
         return x*y;
 }
-int cal::div(int x,int y){
+/*int cal::div(int x,int y){
         return x/y;
-}
+}*/
 int main(){
         cal obj;
         int a,b;
@@ -31,7 +33,7 @@ int main(){
         cout<<"addition: "<<obj.add(a,b)<<endl;
         cout<<"subtraction: "<<obj.sub(a,b)<<endl;
         cout<<"product: "<<obj.mul(a,b)<<endl;
-        cout<<"division: "<<obj.div(a,b)<<endl;
+        //cout<<"division: "<<obj.div(a,b)<<endl;
         return 0;
 }
 
