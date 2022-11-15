@@ -1,0 +1,13 @@
+CC = g++
+CFLAGS = -g
+
+OBJS = main.o
+
+${EXEC}: ${OBJS}
+    ${CC} ${CFLAGS} -o ${EXEC} ${OBJS}
+
+main: main.o 
+    $(CC) $(CFLAGS) -o main main.o
+ 
+main.o: main.cpp 
+    $(CC) $(CFLAGS) -c main.cpp
